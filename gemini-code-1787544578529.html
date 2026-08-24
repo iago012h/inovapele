@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Inova Pele — estética e depilação em Maringá. Tratamentos faciais, corporais, massagens e cuidados personalizados.">
+<title>Inova Pele | Estética e Depilação em Maringá</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+:root{--rose:#c95778;--dark:#8f3452;--soft:#f9e9ee;--cream:#fbf8f5;--white:#fff;--ink:#30292b;--muted:#71686b;--line:#eadfe2;--green:#25d366;--max:1180px;--shadow:0 18px 55px rgba(55,28,37,.09)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:85px}
+body{font-family:"DM Sans",sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,h4{font-family:"Playfair Display",serif;line-height:1.12}p{color:var(--muted)}a{text-decoration:none;color:inherit}img{display:block;width:100%;object-fit:cover}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}.section{padding:95px 0}
+.eyebrow{display:inline-flex;gap:8px;color:var(--dark);font-size:.76rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin-bottom:14px}
+.heading{max-width:700px;margin:0 auto 42px;text-align:center}.heading h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:14px}.heading p{font-size:1rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:52px;padding:0 24px;border-radius:999px;border:1px solid transparent;font-weight:700;transition:.25s;cursor:pointer}
+.btn-primary{background:var(--rose);color:#fff;box-shadow:0 12px 30px rgba(201,87,120,.24)}.btn-primary:hover{background:var(--dark);transform:translateY(-2px)}
+.btn-light{background:#fff;border-color:var(--line);color:var(--dark)}.btn-light:hover{transform:translateY(-2px);border-color:var(--rose)}
+.btn-whatsapp{background:var(--green);color:#fff}.btn-whatsapp:hover{background:#1ebe5a;transform:translateY(-2px)}
+header{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.93);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:700}.logo{width:52px;height:52px;border-radius:50%;border:1px solid #f0d9e0; object-fit:contain; padding:2px;}.brand small{display:block;color:var(--muted);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase}
+.links{display:flex;gap:22px;align-items:center;font-size:.9rem;font-weight:600}.links a:hover{color:var(--rose)}.actions{display:flex;gap:9px}.menu{display:none;border:0;background:none;font-size:1.2rem}
+.hero{background:radial-gradient(circle at 82% 15%,#f9e9ee,transparent 35%),linear-gradient(120deg,#fff,#fbf4f6)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center;padding:78px 0}.hero h1{font-size:clamp(2.8rem,5.2vw,5rem);margin-bottom:22px}.hero h1 em{font-style:normal;color:var(--dark)}.hero p{font-size:1.1rem;max-width:620px;margin-bottom:28px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-note{margin-top:20px;font-size:.84rem;color:var(--muted)}.hero-note i{color:var(--rose)}
+.hero-photo{height:570px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);position:relative;background:var(--soft)}.hero-photo img{height:100%}.badge{position:absolute;left:22px;bottom:22px;background:rgba(255,255,255,.95);padding:17px 20px;border-radius:18px;box-shadow:0 12px 35px #0002}.badge strong{display:block;font-size:1.15rem}.badge span{font-size:.8rem;color:var(--muted)}
+.trust{background:#fff;border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:27px 0}.trust-item{text-align:center;border-right:1px solid var(--line)}.trust-item:last-child{border:0}.trust-item strong{display:block;font:600 1.6rem "Playfair Display";color:var(--dark)}.trust-item span{font-size:.8rem;color:var(--muted)}
+.services{background:#fff}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{height:440px;position:relative;overflow:hidden;border-radius:24px;background:var(--soft)}.card img{height:100%;transition:.55s}.card:hover img{transform:scale(1.05)}.overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:24px;background:linear-gradient(transparent 30%,rgba(22,16,18,.84))}.overlay h3{color:#fff;font-size:1.45rem;margin-bottom:6px}.overlay p{color:#fffc;font-size:.84rem;margin-bottom:13px}.overlay a{color:#fff;font-weight:700;font-size:.82rem}
+.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.about-img{height:540px;border-radius:30px;overflow:hidden;box-shadow:var(--shadow)}.about-img img{height:100%}.about h2{font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:18px}.about-copy>p{margin-bottom:18px}.points{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:25px 0}.point{padding:16px;background:#fff;border:1px solid var(--line);border-radius:16px;font-size:.88rem}.point i{color:var(--rose);margin-right:7px}
+.results{background:#f8eff2}.result-grid,.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.result{background:#fff;border-radius:22px;overflow:hidden}.result img{aspect-ratio:1}.result div{padding:15px 18px}.result strong{display:block}.result span{font-size:.78rem;color:var(--muted)}.note{text-align:center;font-size:.75rem;margin-top:16px}
+.benefits{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.benefit{background:#fff;border:1px solid var(--line);padding:25px 20px;border-radius:20px}.icon{width:44px;height:44px;display:grid;place-items:center;background:var(--soft);color:var(--dark);border-radius:50%;margin-bottom:16px}.benefit h3{font-family:"DM Sans";font-size:1rem;margin-bottom:7px}.benefit p{font-size:.84rem}
+.space{background:#fff}.space-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.space-main,.space-side div{overflow:hidden;border-radius:24px;background:var(--soft)}.space-main img{height:520px}.space-side{display:grid;gap:18px}.space-side img{height:251px}
+.offer{background:var(--dark);color:#fff}.offer-grid{display:grid;grid-template-columns:1fr .7fr;gap:50px;align-items:center}.offer h2{color:#fff;font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:15px}.offer p{color:#fffc}.offer ul{list-style:none;margin:20px 0 26px}.offer li{margin:9px 0;color:#fffc}.offer li i{color:#f6cbd7;margin-right:7px}.offer-img{border-radius:26px;overflow:hidden}.offer-img img{height:440px}
+.review{background:#fff;border:1px solid var(--line);border-radius:21px;padding:26px}.stars{color:#d99b32;letter-spacing:2px;margin-bottom:15px}.review blockquote{font:1.08rem "Playfair Display";margin-bottom:16px}.review cite{font-size:.8rem;color:var(--muted);font-style:normal;font-weight:700}
+.faq{background:#fff}.faq-list{max-width:850px;margin:auto}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;border:0;background:none;display:flex;justify-content:space-between;text-align:left;gap:20px;padding:22px 0;font-weight:700;cursor:pointer}.faq-q i{color:var(--rose);transition:.25s}.faq-a{display:grid;grid-template-rows:0fr;transition:.3s}.faq-a>div{overflow:hidden}.faq-item.active .faq-a{grid-template-rows:1fr}.faq-item.active .faq-a p{padding-bottom:20px}.faq-item.active .faq-q i{transform:rotate(180deg)}
+.location-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:28px}.info{background:#fff;border:1px solid var(--line);border-radius:24px;padding:30px}.info h3{font-size:1.7rem;margin-bottom:20px}.loc{display:flex;gap:13px;margin:18px 0}.loc i{color:var(--rose);width:20px;margin-top:5px}.loc strong{display:block;font-size:.88rem}.loc span{font-size:.84rem;color:var(--muted)}.map{min-height:430px;border-radius:24px;overflow:hidden;box-shadow:var(--shadow)}.map iframe{width:100%;height:100%;min-height:430px;border:0}
+.final{text-align:center;padding:85px 0;background:linear-gradient(135deg,#f7dfe6,#fff)}.final h2{font-size:clamp(2.2rem,4vw,3.4rem);margin-bottom:12px}.final p{max-width:600px;margin:0 auto 24px}
+footer{background:#281f22;color:#fff;padding:60px 0 22px}.foot{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;padding-bottom:40px}.foot h3,.foot h4{font-family:"DM Sans";color:#fff}.foot h4{font-size:.9rem;margin-bottom:14px}.foot p,.foot a{color:#fffa;font-size:.84rem}.foot a{display:block;margin:9px 0}.bottom{text-align:center;border-top:1px solid #fff2;padding-top:20px;color:#fff7;font-size:.74rem}
+.float{position:fixed;right:20px;bottom:20px;z-index:1200;background:var(--green);color:#fff;border-radius:999px;padding:13px 17px;font-weight:700;box-shadow:0 12px 35px #0003}.float:hover{background:#1ebe5a;transform:translateY(-2px)}
+.reveal{opacity:0;transform:translateY(22px);transition:.7s}.reveal.visible{opacity:1;transform:none}
+
+/* Estilos Adicionados para Modal e Lightbox (Galeria) */
+.gallery-img { cursor: zoom-in; }
+.lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 11000; display: flex; justify-content: center; align-items: center; opacity: 0; visibility: hidden; transition: 0.3s; padding: 20px;}
+.lightbox.active { opacity: 1; visibility: visible; }
+.lightbox img { max-width: 100%; max-height: 90vh; border-radius: 12px; object-fit: contain; }
+.lightbox-close { position: absolute; top: 20px; right: 30px; color: #fff; font-size: 2.5rem; cursor: pointer; z-index: 2;}
+
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.85); z-index: 10000; display: flex; justify-content: center; align-items: center; opacity: 0; visibility: hidden; transition: 0.3s ease; padding: 20px; }
+.modal-overlay.active { opacity: 1; visibility: visible; }
+.modal-content { background: #fff; max-width: 420px; width: 100%; border-radius: 20px; overflow: hidden; position: relative; transform: scale(0.95); transition: 0.3s ease; }
+.modal-overlay.active .modal-content { transform: scale(1); }
+.modal-close { position: absolute; top: 12px; right: 12px; width: 32px; height: 32px; background: rgba(0,0,0,0.6); color: #fff; border: none; border-radius: 50%; font-size: 1.2rem; cursor: pointer; z-index: 10; display:flex; align-items:center; justify-content:center;}
+.modal-footer { padding: 18px; text-align: center; background: #1a1a1a; }
+
+@media(max-width:1050px){.cards,.benefits{grid-template-columns:repeat(2,1fr)}.links{gap:12px}}
+@media(max-width:820px){.section{padding:72px 0}.menu{display:block}.links{position:fixed;display:none;left:0;right:0;top:78px;background:#fff;padding:12px;flex-direction:column;align-items:stretch;box-shadow:0 20px 30px #0001}.links.open{display:flex}.links a{padding:13px}.actions .btn-light{display:none}.hero-grid,.about-grid,.offer-grid,.location-grid{grid-template-columns:1fr}.hero-grid{padding:58px 0 70px}.hero-photo{height:430px}.about-img{height:430px}.trust-grid{grid-template-columns:1fr 1fr}.trust-item{margin:8px 0}.trust-item:nth-child(2){border:0}.space-grid{grid-template-columns:1fr}.space-main img{height:400px}.space-side{grid-template-columns:1fr 1fr}.space-side img{height:220px}.result-grid,.reviews{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.container{width:calc(100% - 30px)}.brand span{display:none}.actions .btn-whatsapp{display:none}.hero h1{font-size:2.65rem}.hero-actions .btn{width:100%}.hero-photo{height:360px}.cards,.benefits,.points{grid-template-columns:1fr}.card{height:360px}.space-side{grid-template-columns:1fr}.space-side img{height:230px}.offer-img img{height:350px}.foot{grid-template-columns:1fr}.float{left:14px;right:14px;text-align:center}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#inicio"><img class="logo" src="logo.jpg" alt="Logo Inova Pele"><span>Inova Pele<small>Estética & Depilação</small></span></a>
+<nav class="links" id="nav"><a href="#inicio">Início</a><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#sobre">Sobre</a><a href="#faq">FAQ</a><a href="#localizacao">Localização</a></nav>
+<div class="actions"><a class="btn btn-light" href="#tratamentos">Tratamentos</a><a class="btn btn-whatsapp" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Inova%20Pele%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Agendar</a><button class="menu" id="menu" aria-label="Abrir menu" aria-expanded="false"><i class="fas fa-bars"></i></button></div>
+</div></header>
+
+<main id="inicio">
+<section class="hero"><div class="container hero-grid">
+<div class="reveal"><span class="eyebrow"><i class="fas fa-sparkles"></i> Estética em Maringá</span>
+<h1>Cuide da sua beleza com <em>tempo, atenção e propósito.</em></h1>
+<p>Tratamentos faciais, corporais, depilação e massagens personalizados para valorizar sua beleza natural e tornar seu momento de cuidado ainda mais especial.</p>
+<div class="hero-actions"><a class="btn btn-primary" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Inova%20Pele%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar pelo WhatsApp <i class="fas fa-arrow-right"></i></a><a class="btn btn-light" href="#tratamentos">Ver tratamentos</a></div>
+<div class="hero-note"><i class="fas fa-check-circle"></i> Atendimento personalizado • Maringá/PR</div></div>
+<div class="hero-photo reveal"><img src="recepcao.jpg" alt="Aqui você é muito bem vinda - Recepção" class="gallery-img"><div class="badge"><strong>10 anos de experiência</strong><span>Um espaço pensado para você se sentir bem.</span></div></div>
+</div></section>
+
+<section class="trust"><div class="container trust-grid"><div class="trust-item"><strong>10+</strong><span>anos de experiência</span></div><div class="trust-item"><strong>4 áreas</strong><span>de cuidados</span></div><div class="trust-item"><strong>100%</strong><span>atendimento personalizado</span></div><div class="trust-item"><strong>Maringá</strong><span>Zona 07</span></div></div></section>
+
+<section class="section services" id="tratamentos"><div class="container"><div class="heading reveal"><span class="eyebrow">Nossos cuidados</span><h2>Tratamentos para diferentes momentos da sua rotina</h2><p>Clique nas imagens para conferir todos os detalhes das nossas promoções.</p></div>
+<div class="cards">
+<article class="card reveal"><img src="depilacao.jpg" alt="Depilação a Laser e LED" class="gallery-img" loading="lazy"><div class="overlay"><div><h3>Depilação a Laser ou LED</h3><p>Sessão avulsa com 50% OFF. Válido para qualquer região do corpo!</p><a href="https://wa.me/554430242594?text=Ol%C3%A1!%20Gostaria%20de%20aproveitar%20a%20promo%C3%A7%C3%A3o%20de%2050%25%20off%20na%20depila%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar sessão →</a></div></div></article>
+<article class="card reveal"><img src="limpeza.jpg" alt="Limpeza de pele R$99" class="gallery-img" loading="lazy"><div class="overlay"><div><h3>Limpeza de Pele</h3><p>Remova células mortas, cravos e impurezas. Apenas R$99,00 a sessão sem retorno.</p><a href="https://wa.me/554430242594?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20a%20limpeza%20de%20pele%20por%20R$99." target="_blank" rel="noopener">Agendar sessão →</a></div></div></article>
+<article class="card reveal"><img src="massagem.jpg" alt="Massagem Relaxante" class="gallery-img" loading="lazy"><div class="overlay"><div><h3>Massagem Relaxante</h3><p>Alívio do estresse, melhora do sono e circulação. Pacote com 5 sessões por R$390,00.</p><a href="https://wa.me/554430242594?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20pacote%20de%205%20sess%C3%B5es%20de%20massagem." target="_blank" rel="noopener">Agendar pacote →</a></div></div></article>
+</div></div></section>
+
+<section class="section" id="sobre"><div class="container about-grid"><div class="about-img reveal"><img src="beneficios.jpg" alt="Tratamentos Inova Pele" loading="lazy"></div><div class="reveal"><span class="eyebrow">Sobre a Inova Pele</span><h2>Mais do que um procedimento: um momento para você.</h2><p>Há uma década, a Inova Pele trabalha com estética e bem-estar em Maringá, buscando unir cuidado, acolhimento e atendimento individualizado.</p><p>Nosso propósito é entender o que você procura e orientar cada etapa do seu cuidado com atenção às suas necessidades e objetivos.</p><div class="points"><div class="point"><i class="fas fa-check"></i> Atendimento acolhedor</div><div class="point"><i class="fas fa-check"></i> Protocolos personalizados</div><div class="point"><i class="fas fa-check"></i> Ambiente confortável</div><div class="point"><i class="fas fa-check"></i> Equipe em atualização</div></div><a class="btn btn-primary" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Gostaria%20de%20conhecer%20a%20Inova%20Pele." target="_blank" rel="noopener">Conhecer a Inova Pele</a></div></div></section>
+
+<section class="section results" id="resultados"><div class="container"><div class="heading reveal"><span class="eyebrow">Resultados</span><h2>Conheça alguns dos nossos trabalhos</h2><p>Confira algumas imagens da Inova Pele. Para informações sobre cada procedimento, fale com nossa equipe.</p></div><div class="result-grid"><article class="result reveal"><img src="review.jpg" alt="Resultado corporal" class="gallery-img" loading="lazy"><div><strong>Estética e Contorno</strong><span>Resultado apresentado pela clínica</span></div></article><article class="result reveal"><img src="review2.jpg" alt="Resultado de estética corporal" class="gallery-img" loading="lazy"><div><strong>Tratamento Corporal</strong><span>Resultado apresentado pela clínica</span></div></article><article class="result reveal"><img src="review3.jpg" alt="Resultado estético" class="gallery-img" loading="lazy"><div><strong>Estética Avançada</strong><span>Resultado apresentado pela clínica</span></div></article></div><p class="note">Resultados variam conforme características individuais, avaliação e protocolo indicado.</p></div></section>
+
+<section class="section space"><div class="container"><div class="heading reveal"><span class="eyebrow">Nosso espaço</span><h2>Ambiente e tecnologia a seu favor</h2><p>Clique nas imagens para ampliar e conhecer os detalhes do nosso espaço.</p></div><div class="space-grid"><div class="space-main reveal"><img src="clinica.jpg" alt="Fachada da Inova Pele" class="gallery-img" loading="lazy"></div><div class="space-side"><div class="reveal"><img src="equipamentos.jpg" alt="Equipamentos de Ponta" class="gallery-img" loading="lazy"></div><div class="reveal"><img src="salas.jpg" alt="Salas Inova Pele" class="gallery-img" loading="lazy"></div></div></div></div></section>
+
+<section class="section offer"><div class="container offer-grid"><div class="reveal"><span class="eyebrow" style="color:#f6cbd7">Novidade de Lançamento!</span><h2>Preenchimento Glúteo com Plasma Gel</h2><p>Você já pensou em realçar suas curvas de forma natural, segura e com um resultado sofisticado? O Preenchimento Glúteo com Plasma Gel é uma técnica inovadora e biocompatível.</p><ul><li><i class="fas fa-check"></i> Procedimento minimamente invasivo</li><li><i class="fas fa-check"></i> Material autólogo (feito do próprio paciente)</li><li><i class="fas fa-check"></i> Mais volume, definição e firmeza</li><li><i class="fas fa-check"></i> Condição: 10x de R$199,00 (100ml por sessão)</li></ul><a class="btn btn-whatsapp" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Vi%20a%20novidade%20do%20preenchimento%20de%20gl%C3%BAteos%20no%20site%20e%20quero%20agendar." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Agendar Avaliação</a></div><div class="offer-img reveal"><img src="promo.jpg" alt="Novidade Lançamento Preenchimento Glúteo" class="gallery-img" loading="lazy"></div></div></section>
+
+<section class="section"><div class="container"><div class="heading reveal"><span class="eyebrow">Avaliações reais</span><h2>O que nossas clientes dizem</h2><p>Experiências compartilhadas por clientes da Inova Pele no Google.</p></div><div class="reviews">
+<article class="review reveal"><div class="stars">★★★★★</div><blockquote>“Clínica incrível. Meninas super atenciosas e com excelência no trabalho que fazem.”</blockquote><cite>— Ana Caroline Raimundini Aranha</cite><small style="display:block;color:var(--muted);margin-top:8px;font-size:.76rem">Avaliação no Google • 8 avaliações</small></article>
+<article class="review reveal"><div class="stars">★★★★★</div><blockquote>“Projeto impecável. O atendimento é ótimo, transmite uma boa sensação em estar lá. Todo o lugar traz boas energias e as esteticistas são muito gentis e bem qualificadas. A variedade de serviços prestados é grande.”</blockquote><cite>— Naira Correia</cite><small style="display:block;color:var(--muted);margin-top:8px;font-size:.76rem">Avaliação no Google • Local Guide</small></article>
+<article class="review reveal"><div class="stars">★★★★★</div><blockquote>“Fiz uma drenagem linfática com a Giovana. Simplesmente maravilhosa!!! Amei❣️”</blockquote><cite>— Sonia Maria Lucianotfbjc</cite><small style="display:block;color:var(--muted);margin-top:8px;font-size:.76rem">Avaliação no Google</small></article>
+</div></div></section>
+
+<section class="section faq" id="faq"><div class="container"><div class="heading reveal"><span class="eyebrow">Dúvidas</span><h2>Perguntas frequentes</h2><p>Se ainda ficou alguma dúvida, nossa equipe pode orientar você pelo WhatsApp.</p></div><div class="faq-list">
+<div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Como faço para agendar?<i class="fas fa-chevron-down"></i></button><div class="faq-a"><div><p>É só clicar em um dos botões de WhatsApp do site e falar com a equipe para consultar horários disponíveis.</p></div></div></div>
+<div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Como funciona a avaliação?<i class="fas fa-chevron-down"></i></button><div class="faq-a"><div><p>A avaliação é o momento para entender seus objetivos e orientar, quando aplicável, o cuidado mais adequado às suas necessidades.</p></div></div></div>
+<div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Quais formas de pagamento vocês aceitam?<i class="fas fa-chevron-down"></i></button><div class="faq-a"><div><p>Consulte a equipe pelo WhatsApp para confirmar as formas de pagamento e condições disponíveis no momento.</p></div></div></div>
+<div class="faq-item reveal"><button class="faq-q" aria-expanded="false">Os procedimentos podem causar desconforto?<i class="fas fa-chevron-down"></i></button><div class="faq-a"><div><p>A sensação varia conforme o procedimento e a sensibilidade de cada pessoa. Converse com a equipe antes de realizar qualquer tratamento.</p></div></div></div>
+</div></div></section>
+
+<section class="section" id="localizacao"><div class="container"><div class="heading reveal"><span class="eyebrow">Onde estamos</span><h2>Venha conhecer a Inova Pele</h2><p>Estamos na Zona 07, em Maringá. Confirme o endereço antes de sair.</p></div><div class="location-grid"><div class="info reveal"><h3>Informações</h3><div class="loc"><i class="fas fa-location-dot"></i><div><strong>Endereço</strong><span>R. Paranaguá, 415 — Zona 07<br>Maringá — PR, 87020-190</span></div></div><div class="loc"><i class="fas fa-clock"></i><div><strong>Horários</strong><span>Seg a Sex: 08:00 – 20:00<br>Sábados: 08:00 – 18:00<br>Domingos: Fechado</span></div></div><div class="loc"><i class="fas fa-car"></i><div><strong>Estacionamento</strong><span>Facilidade para estacionar nas proximidades. Confirme as condições com a clínica.</span></div></div><a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&query=R.%20Paranagu%C3%A1%2C%20415%20-%20Zona%2007%2C%20Maring%C3%A1%20-%20PR%2C%2087020-190" target="_blank" rel="noopener"><i class="fas fa-route"></i> Abrir no Google Maps</a></div><div class="map reveal"><iframe src="https://maps.google.com/maps?q=R.%20Paranagu%C3%A1,%20415%20-%20Zona%2007,%20Maring%C3%A1%20-%20PR,%2087020-190&t=&z=16&ie=UTF8&iwloc=&output=embed" title="Mapa da Inova Pele" loading="lazy" allowfullscreen></iframe></div></div></div></section>
+
+<section class="final"><div class="container reveal"><span class="eyebrow">Seu próximo momento de cuidado</span><h2>Vamos encontrar o tratamento ideal para você?</h2><p>Converse com a equipe da Inova Pele, tire suas dúvidas e consulte horários disponíveis.</p><a class="btn btn-whatsapp" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Inova%20Pele%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp</a></div></section>
+</main>
+
+<footer><div class="container"><div class="foot"><div><h3>Inova Pele</h3><p>Estética e depilação em Maringá, com atendimento acolhedor e cuidados personalizados.</p></div><div><h4>Fale conosco</h4><a href="https://wa.me/554430242594" target="_blank"><i class="fab fa-whatsapp"></i> (44) 3024-2594</a><a href="mailto:esteticainovapele@gmail.com"><i class="fas fa-envelope"></i> esteticainovapele@gmail.com</a><a href="https://www.instagram.com/inovapele" target="_blank"><i class="fab fa-instagram"></i> @inovapele</a></div><div><h4>Navegação</h4><a href="#tratamentos">Tratamentos</a><a href="#resultados">Resultados</a><a href="#sobre">Sobre</a><a href="#localizacao">Localização</a></div></div><div class="bottom">© 2026 Inova Pele. Todos os direitos reservados.</div></div></footer>
+
+<a class="float" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Vi%20o%20site%20da%20Inova%20Pele%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank"><i class="fab fa-whatsapp"></i> Agendar pelo WhatsApp</a>
+
+<!-- Modal Pop-up para Oferta Tirzepatida -->
+<div class="modal-overlay" id="promoModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeModal">&times;</button>
+        <img src="oferta.jpg" alt="Oferta Imperdível Tirzepatida - Perca até 10kg">
+        <div class="modal-footer">
+            <a class="btn btn-whatsapp" style="width:100%; font-size:1.1rem; border-radius:12px;" href="https://wa.me/554430242594?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20o%20m%C3%A9todo%20exclusivo%20Inova%20Pele%20com%20Tirzepatida%20para%20perder%20at%C3%A9%2010kg." target="_blank"><i class="fab fa-whatsapp"></i> Quero saber mais!</a>
+        </div>
+    </div>
+</div>
+
+<script>
+// Menu Mobile e FAQ
+const menu=document.getElementById("menu"),nav=document.getElementById("nav");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",open);menu.innerHTML=open?'<i class="fas fa-xmark"></i>':'<i class="fas fa-bars"></i>'});
+nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
+document.querySelectorAll(".faq-q").forEach(btn=>btn.addEventListener("click",()=>{const item=btn.parentElement,active=item.classList.toggle("active");btn.setAttribute("aria-expanded",active);document.querySelectorAll(".faq-item").forEach(x=>{if(x!==item){x.classList.remove("active");x.querySelector(".faq-q").setAttribute("aria-expanded","false")}})}));
+
+// Efeito de rolagem Reveal
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("visible");obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll(".reveal").forEach(x=>obs.observe(x));
+
+// Funcionalidade de Galeria (Lightbox)
+const lightbox = document.createElement('div');
+lightbox.className = 'lightbox';
+lightbox.innerHTML = '<span class="lightbox-close">&times;</span><img src="">';
+document.body.appendChild(lightbox);
+const lbImg = lightbox.querySelector('img'), lbClose = lightbox.querySelector('.lightbox-close');
+
+document.querySelectorAll('.gallery-img').forEach(img => {
+    img.addEventListener('click', e => { 
+        e.preventDefault(); 
+        lbImg.src = img.src; 
+        lightbox.classList.add('active'); 
+    });
+});
+lbClose.addEventListener('click', () => lightbox.classList.remove('active'));
+lightbox.addEventListener('click', e => { if(e.target === lightbox) lightbox.classList.remove('active'); });
+
+// Funcionalidade do Modal Promocional (Aparece após 2.5s)
+const promoModal = document.getElementById('promoModal');
+if(promoModal){
+    setTimeout(() => { promoModal.classList.add('active'); }, 2500);
+    document.getElementById('closeModal').addEventListener('click', () => promoModal.classList.remove('active'));
+    promoModal.addEventListener('click', e => { if(e.target === promoModal) promoModal.classList.remove('active'); });
+}
+</script>
+</body>
+</html>
